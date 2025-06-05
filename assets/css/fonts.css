@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url(../fonts/JetBrains-Mono/static/JetBrainsMono-Regular.ttf);
+}
+
+.navbar-brand, h2 {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    font-size: 1.5rem;
+}

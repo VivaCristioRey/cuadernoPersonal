@@ -17,3 +17,73 @@ body {
     margin: 0;
     padding: 0;
 }
+
+h1 {
+    font-size: 4.5rem;
+    color: var(--text-primary);
+}
+
+nav {
+    background-color: var(--bg-secondary);
+    border: var(--border-color);
+    & a {
+        color: var(--accent-color);
+    }
+}
+
+body > section {
+    background-color: var(--bg-secondary);
+    border-bottom: var(--text-secondary);
+}
+
+main > div > div {
+    margin: 0px 220px 0px 220px;
+}
+
+
+.badge {
+    background-color: var(--accent-hover);
+    color: var(--accent-color);
+    border-radius: 5px;
+    padding: 0px 0px 0px 0px;
+    & {
+        background-color: rgba(16, 185, 129, 0.1) !important;
+    }
+}
+
+.navbar-brand {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.text-muted {
+    color: var(--text-muted);
+    font-size: 1.3rem;
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Scrollbar */
+/* ::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+} */

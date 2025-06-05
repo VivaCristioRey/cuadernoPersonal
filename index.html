@@ -6,46 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NodeJS - Desarrollo Web</title>
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar bg-body-tertiary py-2">
+        <div class="container-fluid d-flex justify-content-center py-2">
             <a class="navbar-brand" href="#">DevNotes</a>
         </div>
     </nav>
 
     <!-- Introducción -->
-    <section>
+    <section class="py-5">
         <div class="container">
-            <div>
-                <h1>
+            <div class="heading flex-column">
+                <h1 class="m-0 mb-3 d-flex justify-content-center">
                     Apuntes de
-                    <span>
+                    <span class="text-accent">
                         Desarollo Web
                     </span>
                 </h1>
-                <p>
+                <p class="text-muted m-0 mb-4 d-flex justify-content-center">
                     Este cuaderno me ayudará a estudiar de una manera diferente a como lo haría normalmente
                 </p>
-                <div>
-                    <span>NodeJS</span>
-                    <span>npm</span>
+                <div class="d-flex justify-content-center">
+                    <span class="px-3 mx-2 badge rounded-pill text-bg-success">NodeJS</span>
+                    <span class="px-3 mx-2 badge rounded-pill text-bg-success">npm</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <h2>Entradas del blog</h2>
+    <main class="container py-5">
+        <div class="">
+            <div class="">
+                <h2>Entradas del blog</h2>
+            </div>
+            <div>
+                <!-- Aquí va las entradas -->
+            </div>
         </div>
-    </section>
-
-
+    </main>
 
     <script src="index.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -14,7 +14,19 @@
     <!-- Navbar -->
     <nav class="navbar bg-body-tertiary py-2">
         <div class="container-fluid d-flex justify-content-center py-2">
-            <a class="navbar-brand" href="#">DevNotes</a>
+            <a class="navbar-brand d-flex flex-row" href="#">
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-code-slash me-2" viewBox="0 0 16 16">
+                        <path
+                            d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+                            stroke="currentColor" stroke-width="0.8" />
+                    </svg>
+                </div>
+                <div>
+                    DevNotes
+                </div>
+            </a>
         </div>
     </nav>
 
@@ -22,47 +34,51 @@
     <section class="py-5">
         <div class="container">
             <div class="heading flex-column">
-                <h1 class="m-0 mb-3 d-flex justify-content-center">
+                <h1 class="m-0 mb-3 d-flex justify-content-center inter-semiBold">
                     Apuntes de
                     <span class="text-accent">
-                        <i class="bi bi-book-fill"></i>
                         Desarollo Web
                     </span>
                 </h1>
-                <p class="text-muted m-0 mb-4 d-flex justify-content-center">
+                <p class="text-muted m-0 mb-4 d-flex justify-content-center inter-regular">
                     Este cuaderno me ayudará a estudiar de una manera diferente a como lo haría normalmente
                 </p>
                 <div class="d-flex justify-content-center">
-                    <span class="px-3 mx-2 badge rounded-pill text-bg-success">NodeJS</span>
-                    <span class="px-3 mx-2 badge rounded-pill text-bg-success">npm</span>
+                    <span class="px-3 mx-2 badge rounded-pill inter-regular text-bg-success">NodeJS</span>
+                    <span class="px-3 mx-2 badge rounded-pill inter-regular text-bg-success">npm</span>
                 </div>
             </div>
         </div>
     </section>
 
     <main class="container py-5">
-        <div class="">
-            <div class="">
-                <h2>Entradas del blog</h2>
+        <div>
+            <div class="d-flex flex-row align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-book-fill me-2" viewBox="0 0 16 16">
+                    <path
+                        d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                </svg>
+                <h2 class="inter-light">Entradas del Blog</h2>
             </div>
             <div>
                 <!-- NodeJS -->
                 <h1 class="d-flex justify-content-center">NodeJS</h1>
-                <div>
-                    <h2>1. Describa en sus propias palabras y de manera completa, qué es NodeJS.</h2>
+                <div class="mb-5">
+                    <h2>1. ¿Qué es NodeJS?</h2>
                     <div>
                         <p>Es un entorno de ejecución para JavaScript</p>
                     </div>
                 </div>
-                <div>
-                    <h2>2. Defina las diferencias entre Javascript en el frontend y Javascript en el navegador</h2>
+                <div class="mb-5">
+                    <h2>2. Diferencias entre Javascript en el frontend y Javascript en el navegador</h2>
                     <div>
                         <p>En el Frontend sirve para la interactividad del cliente con el aplicativo web, y en el
                             navegador se usa para ejecutar scripts para distintos objetivos</p>
                     </div>
                 </div>
-                <div>
-                    <h2>3. Justifique brevemente qué ventajas y desventajas tiene el uso de Javascript en el Backend
+                <div class="mb-5">
+                    <h2>3. Ventajas y desventajas del uso de Javascript en el Backend
                     </h2>
                     <div>
                         <p>Como ventajas encontramos que es un lenguaje que se presta para hacer cualquier cosa, por lo
@@ -72,17 +88,78 @@
                             como desventajas encontramos que este consume muchos recursos</p>
                     </div>
                 </div>
-                <div>
-                    <h2> 4. Realice un paso a paso con capturas de pantalla que demuestre el proceso de descarga,
-                        instalación y configuración de Nodejs en su computador</h2>
+                <div class="mb-5">
+                    <h2> 4. Paso a paso para la instalación y configuración</h2>
                     <div>
-                        <span>Windows:</span>
+                        <p>Windows:</p>
                         <!-- Primer paso -->
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card’s content.</p>
+                        <div class="d-flex justify-content-center pb-3">
+                            <div class="card">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/img/1step.png" class="m-2" alt=""
+                                        style="width: 699px; height: 286px;">
+                                </div>
+                                <div>
+                                    <p class="ms-3 mb-2 mt-0 p">1. Buscaremos en internet <a href="https://nodejs.org"
+                                            target="_blank">nodejs.org</a> e ingresaremos al primer link</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Segundo paso -->
+                        <div class="d-flex justify-content-center py-3 ">
+                            <div class="card">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/img/2step.png" class="m-2" alt=""
+                                        style="width: 699px; height: 286px;">
+                                </div>
+                                <div>
+                                    <p class="ms-3 mb-2 mt-0 p">2. Entramos y descargamos NodeJs (se recomienda
+                                        descargar la
+                                        LTS (Long Term Support))</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tercer paso -->
+                        <div class="d-flex justify-content-center py-3">
+                            <div class="card">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/img/3step.png" class="m-2" alt=""
+                                        style="width: 699px; height: 400px;">
+                                </div>
+                                <div>
+                                    <p class="ms-3 mb-2 mt-0 p">3. Seleccionamos la ruta donde se descargará el
+                                        instalador de NodeJs y le damos a Guardar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cuarto paso -->
+                        <div class="d-flex justify-content-center py-3">
+                            <div class="card">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/img/4step.png" class="m-2" alt="">
+                                </div>
+                                <div>
+                                    <p class="mx-3 mb-2 mt-0 p">4. Ejecutamos el instalador y nos saldrá una ventana
+                                        para seguir los pasos de instalación (Asegúrate de que esté marcada la opción:
+                                        Add To PATH finalizando la instalación), y terminas de instalar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quinto paso -->
+                        <div class="d-flex justify-content-center py-3">
+                            <div class="card">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/img/5step.png" class="m-2" alt=""
+                                        style="width: 699px; height: 400px;">
+                                </div>
+                                <div>
+                                    <p class="mx-3 mb-2 mt-0 p">5. Abrimos la terminal de Windows y escribiremos "node
+                                        -v" y "npm -v" para verificar la versión</p>
+                                </div>
                             </div>
                         </div>
                     </div>

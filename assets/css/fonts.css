@@ -2,9 +2,47 @@
     font-family: 'JetBrains Mono';
     src: url(../fonts/JetBrains-Mono/static/JetBrainsMono-Regular.ttf);
 }
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter/static/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inter-semiBold';
+    src: url(../fonts/Inter/static/Inter_28pt-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Inter-light';
+    src: url(../fonts/Inter/static/Inter_18pt-Light.ttf);
+}
 
 .navbar-brand, h2 {
     font-family: "JetBrains Mono", monospace;
     font-weight: 600;
     font-size: 1.5rem;
+}
+
+.inter-light {
+    font-family: 'Inter-light', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: bold;
+}
+
+.inter-regular {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: normal;
+}
+
+.inter-semiBold {
+    font-family: 'Inter-semiBold', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+}
+
+h1 {
+    font-family: 'Inter-semiBold', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }

@@ -3,7 +3,7 @@
     --bg-secondary: #1a1a1a;
     --bg-card: #161616;
     --text-primary: #e2e2e2;
-    --text-secondary: #a0a0a0;
+    --text-secondary: #b3b3b3;
     --text-muted: #6b7280;
     --accent-color: #10b981;
     --accent-hover: #059669;
@@ -34,26 +34,59 @@ h2 {
 nav {
     background-color: var(--bg-secondary);
     border: var(--border-color);
+
     & a {
         color: var(--accent-color);
     }
 }
 
-body > section {
+svg {
+    height: auto;
+    width: 28px;
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+img {
+    border-radius: 15px;
+}
+
+p>a {
+    color: var(--accent-color);
+}
+
+
+body>section {
     background-color: var(--bg-secondary);
     border-bottom: var(--text-secondary);
 }
 
-main > div > div {
+main>div>div {
     margin: 0px 220px 0px 220px;
 }
 
+main>div>div>h2 {
+    color: var(--text-primary);
+}
+
+.p {
+    font-size: 1rem;
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    border-radius: 15px;
+    border: 2px solid var(--border-color);
+    width: 719px;
+    height: fit-content;
+}
 
 .badge {
     background-color: var(--accent-hover);
     color: var(--accent-color);
     border-radius: 5px;
     padding: 0px 0px 0px 0px;
+
     & {
         background-color: rgba(16, 185, 129, 0.1) !important;
     }
@@ -61,7 +94,7 @@ main > div > div {
 
 .text-muted {
     color: var(--text-muted);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .text-accent {
@@ -69,7 +102,7 @@ main > div > div {
 }
 
 /* Scrollbar */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 8px;
 }
 
@@ -84,4 +117,4 @@ main > div > div {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent-color);
-} */
+}

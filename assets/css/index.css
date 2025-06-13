@@ -31,20 +31,11 @@ h2 {
     color: var(--accent-color);
 }
 
-nav {
-    background-color: var(--bg-secondary);
-    border: var(--border-color);
-
-    & a {
-        color: var(--accent-color);
-    }
-}
-
 svg {
     height: auto;
     width: 28px;
     color: var(--accent-color);
-    transform: translateY(-2px);
+    transform: translateY(-5px);
 }
 
 img {
@@ -65,27 +56,46 @@ main>div>div {
     margin: 0px 220px 0px 220px;
 }
 
+div>p>span {
+    color: var(--accent-color);
+}
+
 main>div>div>h2 {
     color: var(--text-primary);
 }
 
-.p {
-    font-size: 1rem;
+.border-b {
+    border-bottom: var(--border-color) 2px solid;
+
+}
+
+.navbar {
+    --bs-navbar-brand-hover-color: var(--accent-color) !important;
+    --bs-navbar-brand-color: var(--accent-color) !important;
+    background-color: var(--bg-secondary) !important;
+    border-bottom: var(--border-color) solid 2px;
 }
 
 .card {
     background-color: var(--bg-secondary);
-    border-radius: 15px;
+    border-radius: 23px;
     border: 2px solid var(--border-color);
     width: 719px;
     height: fit-content;
+    transition: ease-in-out 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px 0 var(--accent-hover);
+    transform: translateY(-10px);
 }
 
 .badge {
     background-color: var(--accent-hover);
     color: var(--accent-color);
     border-radius: 5px;
-    padding: 0px 0px 0px 0px;
+    padding: 10px;
+    font-size: 0.9rem;
 
     & {
         background-color: rgba(16, 185, 129, 0.1) !important;
@@ -93,7 +103,7 @@ main>div>div>h2 {
 }
 
 .text-muted {
-    color: var(--text-muted);
+    color: var(--text-muted) !important;
     font-size: 1.1rem;
 }
 

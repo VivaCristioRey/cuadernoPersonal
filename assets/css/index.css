@@ -83,6 +83,7 @@ main>div>div>h2 {
     width: 719px;
     height: fit-content;
     transition: ease-in-out 0.2s;
+    overflow: hidden;
 }
 
 .card:hover {

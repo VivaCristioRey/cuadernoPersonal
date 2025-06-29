@@ -273,6 +273,103 @@
                         usado para proyectos grandes o serios, mientras que <span>npm</span> es más usado por personas
                         que apenas están aprendiendo o para proyectos pequeños</p>
                 </div>
+                <!-- Octavo punto -->
+                <div class="mb-5 border-b">
+                    <h2>8. yarn.lock y package.lock</h2>
+                    <p><span>Yarn.lock</span> y <span>package.lock</span> registran las versiones exactas de todas las
+                        dependencias y subdependencias instaladas en un proyecto de Node.js</p>
+                </div>
+                <!-- Puntos adicionales -->
+                <div class="mb-5 border-b">
+                    <h1 class="text-center">Recuperación</h1>
+                    <h2>Package.json</h2>
+                    <p>Describe el proyecto y contiene información esencial como el nombre, la versión, las
+                        dependencias, los scripts y otros metadatos importantes. Este puede ser modificado agregando al
+                        apartado de los
+                        scripts una palabra clave usando <span>"clave":"valor"</span> donde en el valor va el archivo
+                        (que es especificado en <span>main:</span>, por defecto el <span>index.js</span>)
+                        que se va a ejecutar, y en la clave va la dependencia instalada.</p>
+                    <p>Este puede ser nodemon para iniciar el proyecto con un comando como <span>npm run dev.</span></p>
+                    <h2>Pasos para aplicación web que salude</h2>
+                    <!-- primer paso -->
+                    <div class="d-flex justify-content-center py-3">
+                        <div class="card">
+                            <div class="d-flex justify-content-center">
+                                <img src="assets/img/recuperacion/1paso.png" class="m-2" alt=""
+                                    style="width: 699px; height: auto;">
+                            </div>
+                            <div>
+                                <p class="mx-3 mb-2 mt-0 p">1. Se inicia npm con el comando <span>npm init -y</span>, la
+                                    bandera <span>-y</span> es para que los valores como el <span>main, nombre</span> o
+                                    <span>versión</span> los guarde por defecto y no ingresarlos a mano.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Segundo paso -->
+                    <div class="d-flex justify-content-center py-3">
+                        <div class="card">
+                            <div class="d-flex justify-content-center">
+                                <img src="assets/img/recuperacion/2paso.png" class="m-2" alt=""
+                                    style="width: 699px; height: auto;">
+                            </div>
+                            <div>
+                                <p class="mx-3 mb-2 mt-0 p">2. Se crea el archivo .js especificado en el
+                                    <span>main.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tercer paso -->
+                    <div class="d-flex justify-content-center py-3">
+                        <div class="card">
+                            <div class="d-flex justify-content-center">
+                                <img src="assets/img/recuperacion/3paso.png" class="m-2" alt=""
+                                    style="width: 699px; height: auto;">
+                            </div>
+                            <div>
+                                <p class="mx-3 mb-2 mt-0 p">3. Creamos las variables. Primero se importa
+                                    <span>Express</span>, luego se crea la variable app a la cual le asignamos las
+                                    funciones de <span>Express.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cuarto paso -->
+                    <div class="d-flex justify-content-center py-3">
+                        <div class="card">
+                            <div class="d-flex justify-content-center">
+                                <img src="assets/img/recuperacion/4paso.png" class="m-2" alt=""
+                                    style="width: 699px; height: auto;">
+                            </div>
+                            <div>
+                                <p class="mx-3 mb-2 mt-0 p">4. Definimos el puerto donde la aplicación va a estar
+                                    escuchando y opcional el mensaje satisfactorio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quinto paso -->
+                    <div class="d-flex justify-content-center py-3">
+                        <div class="card">
+                            <div class="d-flex justify-content-center">
+                                <img src="assets/img/recuperacion/5paso.png" class="m-2" alt=""
+                                    style="width: 699px; height: auto;">
+                            </div>
+                            <div>
+                                <p class="mx-3 mb-2 mt-0 p">5. Definimos el endpoint <span>'/saludar'</span> para cuando
+                                    se acceda a <span>localhost:port/saludar</span> mande un mensaje con el <span>res.send</span>
+                                    donde puede recibir etiquetas HTML, el <span>res.end</span> es necesario para especificar que ahí
+                                    termina la función de ese endpoint.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Inicio API REST  -->
                 <div class="mb-5 border-b">
                     <h1 class="d-flex justify-content-center py-5 m-0 ">API REST</h1>
